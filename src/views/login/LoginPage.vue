@@ -63,10 +63,12 @@
 a {
   text-decoration: none;
 }
+
 input,
 select {
   outline: none;
 }
+
 .main {
   width: 1059px;
   height: 674px;
