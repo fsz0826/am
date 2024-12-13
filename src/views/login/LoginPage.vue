@@ -3,7 +3,7 @@
 <template>
   <div class="main">
     <h1>账号登陆</h1>
-    <p>Background System</p>
+    <p>Account Login</p>
     <form action="" class="form">
       <label class="account-number">
         <svg
@@ -41,13 +41,7 @@
         </svg>
         <input type="password" placeholder="请输入密码" />
       </label>
-      <div class="select-bar">
-        <select name="" id="">
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-        </select>
-      </div>
+
     </form>
     <div class="sign-bar">
       <a href="">忘记密码</a>
@@ -80,7 +74,7 @@ select {
   flex-direction: column;
 
   h1 {
-    margin-top: 140px;
+    margin-top: 240px;
     font-size: 24px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -111,23 +105,6 @@ select {
     .icon {
       margin-right: 16px;
     }
-
-    .select-bar {
-      margin-top: 33px;
-      margin-left: 1px;
-      display: flex;
-      justify-content: flex-end;
-
-      select {
-        width: 362px;
-        height: 42px;
-        background-color: #fff;
-        text-align: left;
-        line-height: 18px;
-        color: #000;
-        border: 1px solid #ccc;
-      }
-    }
   }
 
   .sign-bar {
@@ -149,7 +126,7 @@ select {
 
   .btn-bar {
     button {
-      margin-top: 40px;
+      margin-top: 18px;
       width: 362px;
       height: 40px;
       border: none;
