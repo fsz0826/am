@@ -70,10 +70,10 @@ select {
 }
 
 .main {
-  width: 1059px;
-  height: 674px;
-  background: #ffffff;
-
+  width: 100%;
+  height: 100vh;
+  background: url("@/assets/images/signInBackground.jpg") center no-repeat;
+  background-size: cover;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -87,7 +87,7 @@ select {
 
   .form {
     margin-top: 34px;
-    margin-right: 56px;
+    margin-right: 40px;
 
     .account-number,
     .pwd {
@@ -119,7 +119,7 @@ select {
       justify-content: flex-end;
 
       select {
-        width: 374px;
+        width: 362px;
         height: 42px;
         background-color: #fff;
         text-align: left;
