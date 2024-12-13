@@ -1,4 +1,24 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+import { ref } from 'vue'
+
+const account = ref('')
+const password = ref('')
+
+function handleLogin() {
+  if (account.value === '' || password.value === '') {
+    alert('请输入账号和密码');
+    return;
+  }
+
+  // 这里可以添加实际的登录逻辑，比如调用 API
+  console.log('账号:', account.value);
+  console.log('密码:', password.value);
+
+  // 模拟登录成功
+  alert('登录成功')
+}
+</script>
 
 <template>
   <div class="main">
@@ -21,7 +41,7 @@
             fill="#00cccc"
           ></path>
         </svg>
-        <input type="text" placeholder="请输入账号" />
+        <input v-model="account" type="text" placeholder="请输入账号" />
       </label>
       <label class="pwd">
         <svg
@@ -39,7 +59,7 @@
             fill="#00cccc"
           ></path>
         </svg>
-        <input type="password" placeholder="请输入密码" />
+        <input v-model="password" type="password" placeholder="请输入密码" />
       </label>
 
     </form>
@@ -48,7 +68,7 @@
       <a href="#" class="signin">去注册</a>
     </div>
     <div class="btn-bar">
-      <button type="submit">登陆</button>
+      <button @click="handleLogin" type="submit">登陆</button>
     </div>
   </div>
 </template>
