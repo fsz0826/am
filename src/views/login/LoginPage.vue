@@ -19,7 +19,7 @@ const rules = reactive<FormRules<Form>>({
   account: [{ required: true, message: '请输入账号', trigger: 'blur' }],
   password: [
     { required: true, message: '请输入密码', trigger: 'blur' },
-    { min: 6, message: '密码不能少于6位', trigger: 'blur' }
+    { min: 6, message: '密码最低为6位', trigger: 'blur' }
   ]
 })
 
