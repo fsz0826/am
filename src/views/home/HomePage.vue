@@ -1,29 +1,45 @@
-<script setup lang="ts">
-defineProps({
-  icon: { type: [String, Object], required: true },
-  title: { type: String, required: true },
-  value: { type: [String, Number], required: true },
-  iconColor: { type: String, default: '#409EFF' }
-})
-</script>
+<script setup lang = "ts">
 
+// import LianXi1 from '@/lianxi/LianXi1.vue'
+// import TsLianxi from '@/lianxi/TsLianxi.vue'
+// import PropLianxi from '@/lianxi/PropLianxi.vue'
+// import type { PersonInter } from '@/types'
+import { reactive, ref } from 'vue'
+import CountNum from '@/lianxi/CountNum.vue'
+import LoveTalk from '@/lianxi/LoveTalk.vue'
+// import HookLianXI from '@/lianxi/HookLianXI.vue'
+
+/*const personList= reactive<PersonInter[]>([
+  {
+    id: '1',
+    name: '张三',
+    age: 18
+  },
+  {
+    id: '2',
+    name: '李四',
+    age: 19
+  },
+  {
+    id: '3',
+    name: '王五',
+    age: 20
+  }
+])*/
+// console.log(personList)
+/*import ShengMingZhouQi from '@/lianxi/ShengMingZhouQi.vue'
+const show = ref(true)*/
+</script>
 <template>
-  <el-card shadow="hover">
-    <div class="stats-content">
-      <el-icon :size="36" :color="iconColor"><component :is="icon" /></el-icon>
-      <div class="stats-text">
-        <div class="title">{{ title }}</div>
-        <div class="value">{{ value }}</div>
-        <div>homepage</div>
-      </div>
-    </div>
-  </el-card>
+<!--  <LianXi1/>-->
+<!--  <TsLianxi/>-->
+<!--  <PropLianxi :personList="personList"/>-->
+<!--  <ShengMingZhouQi v-if="show"/>-->
+<!--<HookLianXI/>-->
+  <CountNum/>
+  <LoveTalk/>
 </template>
 
-<style scoped lang="scss">
-div{
-  width: 100%;
-  height: 100%;
+<style scoped lang = "scss">
 
-}
 </style>
